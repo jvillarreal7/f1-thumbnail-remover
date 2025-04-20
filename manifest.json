@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "F1TV Thumbnail Remover",
+    "version": "1.0.0",
+    "description": "Removes all thumbnails from F1TV.",
+    "icons": {
+        "32": "icon32.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://f1tv.formula1.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
